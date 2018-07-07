@@ -1,0 +1,70 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: inherit;
+  width: inherit;
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  background-image: url('bkgrnd_white.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+
+
+}
+
+ .container{
+  width:67px;
+  height:60px;
+  margin-left: 40px;
+  margin-top: 40px;
+  padding: 0;
+  cursor:pointer;
+}
+
+.back_btn_img{
+  width:67px;
+  height:60px;
+  padding: 0;
+  /* position: fixed; */
+  transition: .5s ease;
+
+}
+.back_btn_overlay{
+  width:67px;
+  height:60px;
+  /* padding: 0; */
+  top: -60;
+  left: 0;
+  position: relative;
+  opacity: 0;
+  transition: .5s ease;
+  background-position: bottom;
+
+}
+.container:hover .back_btn_overlay{
+  opacity: 1;
+}
+.container:hover .back_btn_img{
+  opacity: 0;
+}
+
+.title_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width:75%; */
+  margin-top:0px;
+}
+
+
+.cnv_div{
+  height: 400;
+  width: 400;
+}
